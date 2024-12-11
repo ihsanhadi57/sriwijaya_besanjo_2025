@@ -120,7 +120,7 @@ const cards = [
   {
     id: 2,
     content: <SkeletonTwo />,
-    className: "row-span-2 ",
+    className: "row-span-2 h-90",
     thumbnail:"/images/sb-2.png"
   },
   {
@@ -138,19 +138,20 @@ const cards = [
   {
     id: 5,
     content: <SkeletonFive />,
-    className: "row-span-1",
+    className: "row-span-1 h-48",
     thumbnail:"/images/sb-4.png"
   },
   {
     id: 6,
     content: <SkeletonSix />,
-    className: "col-span-1 h-60",
+    className: "col-span-1 h-48",
     thumbnail:"/images/sb-6.png"
   },
   {
     id: 7,
     content: <SkeletonSeven />,
-    className: "col-span-2 h-60",
+    className: "col-span-2 h-48",
     thumbnail:"/images/sb-7.png"
   },
 ];
+
