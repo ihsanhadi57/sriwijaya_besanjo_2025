@@ -22,16 +22,23 @@ const Footer: React.FC = () => {
                         </div>
                         <div className="flex flex-col md:flex-row gap-6 md:gap-10 text-[#52525B] dark:text-[#E5E5E5] w-full z-10">
                             <div className="flex flex-col gap-3 md:gap-6 md:w-1/2 lg:w-1/4">
-                                <h4 className="text-lg font-semibold tracking-wide text-transparent uppercase bg-gradient-to-br from-[#fff] to-green-200 bg-clip-text w-fit">
+                                <h4 className="text-lg font-bold text-white uppercase">
                                     Alamat
                                 </h4>
+                                <h5 className="text-white font-semibold">Kampus Utama</h5>
                                 <p className="leading-relaxed text-white lg:w-[90%]">
                                     Jl. Raya Palembang - Prabumulih No. Km. 32, Indralaya Indah,
                                     Kec. Indralaya, Kabupaten Ogan Ilir, Sumatera Selatan 30862
                                 </p>
+
+                                <h5 className="text-white font-bold">Sekretariat</h5>
+                                <p className="leading-relaxed text-white lg:w-[90%]">
+                                    Jalan Tamyiz, Kec. Indralaya Utara, Kabupaten Ogan Indralaya Ilir, 
+                                    30862
+                                </p>
                             </div>
                             <div className="flex flex-col gap-3 md:gap-6">
-                                <h4 className="text-lg font-semibold tracking-wide text-transparent uppercase bg-gradient-to-br from-[#fff] to-green-200 bg-clip-text w-fit">
+                                <h4 className="text-lg font-bold text-white uppercase">
                                     Kontak
                                 </h4>
                                 <div className="flex flex-col gap-1">
@@ -49,18 +56,18 @@ const Footer: React.FC = () => {
                                     <ul className="flex flex-col gap-1 text-white">
                                         <li>
                                             <Link
-                                                href="https://wa.me/6282281830275"
-                                                className="duration-200 hover:text-pink-sriwijayabesanjo"
+                                                href="https://wa.me/6289529733304"
+                                                className="duration-200 hover:text-green-400"
                                             >
-                                                +62 822-8183-0275 (Qibri Hamdalah)
+                                                +62 895-2973-3304 (Qayla)
                                             </Link>
                                         </li>
                                         <li>
                                             <Link
-                                                href="https://wa.me/6281933692440"
-                                                className="hover:text-pink-sriwijayabesanjo"
+                                                href="https://wa.me/6287793855926"
+                                                className="duration-200 hover:text-green-400"
                                             >
-                                                +62 819-3369-2440 (Sherlli Tria Ananta)
+                                                +62 877-9385-5926 (Florenzi)
                                             </Link>
                                         </li>
                                     </ul>
@@ -76,7 +83,7 @@ const Footer: React.FC = () => {
                                         </p>
                                     </div>
                                     <ul>
-                                        <li className="text-white hover:text-pink-sriwijayabesanjo">
+                                        <li className="text-white duration-200 hover:text-green-400">
                                             <a href="mailto:sriwijayabesanjo.unsri23@gmail.com">
                                                 sriwijayabesanjo@gmail.com
                                             </a>
@@ -85,7 +92,7 @@ const Footer: React.FC = () => {
                                 </div>
                             </div>
                             <div className="flex flex-col gap-3 md:gap-6 lg:ml-6">
-                                <h4 className="text-lg font-semibold tracking-wide text-transparent uppercase bg-gradient-to-br from-[#fff] to-green-200 bg-clip-text w-fit">
+                                <h4 className="text-lg font-bold text-white uppercase">
                                     Navigasi
                                 </h4>
                                 <ul className="flex flex-col gap-3 md:gap-6 text-white">
@@ -115,7 +122,7 @@ const Footer: React.FC = () => {
                                 </ul>
                             </div>
                             <div className="flex flex-col gap-3 md:gap-6 lg:ml-6">
-                                <h4 className="text-lg font-semibold tracking-wide text-transparent uppercase bg-gradient-to-br from-[#fff] to-green-200 bg-clip-text w-fit">
+                                <h4 className="text-lg font-bold text-white uppercase">
                                     Kompetisi
                                 </h4>
                                 <ul className="flex flex-col gap-3 md:gap-6 text-white">
@@ -142,7 +149,7 @@ const Footer: React.FC = () => {
                     <hr className="border-t border-t-[#CDCDCD] mt-6" />
                     <div className="z-10 flex justify-between w-full mt-6">
                         <p className="text-lg font-bold text-transparent uppercase bg-gradient-to-br from-[#fff] to-green-200 bg-clip-text w-fit">
-                            © SRIWIJAYA BESANJO 2025
+                            © HIMAJA UNSRI
                         </p>
                         <div className="flex items-center justify-center gap-4 sm:gap-6 lg:gap-8">
                             <Link href="https://instagram.com/sriwijayabesanjo">
@@ -174,7 +181,7 @@ const Footer: React.FC = () => {
                                     height="24"
                                     fill="#FFF"
                                     viewBox="0 0 24 24"
-                                    >
+                                >
                                     <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.5c0-1.379-1.121-2.5-2.5-2.5s-2.5 1.121-2.5 2.5v5.5h-3v-10h3v1.5c.878-1.314 2.356-2.5 4-2.5 2.485 0 4.5 2.015 4.5 4.5v6.5z" />
                                 </svg>
                             </Link>
