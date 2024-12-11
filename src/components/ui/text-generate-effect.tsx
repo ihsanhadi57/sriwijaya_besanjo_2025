@@ -39,7 +39,7 @@ export const TextGenerateEffect = ({
               key={word + idx}
               className="text-[#FFD001] text-stroke-black opacity-0"
               style={{
-                WebkitTextStroke: "0.1px black", // Stroke hitam
+                WebkitTextStroke: "2px black", // Stroke hitam
                 WebkitTextFillColor: "#FFD001", // Isi teks kuning
                 filter: filter ? "blur(10px)" : "none",
               }}
