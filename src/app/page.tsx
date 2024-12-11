@@ -79,14 +79,14 @@ export default function Home() {
           {/* Mobile: Text Section (bottom in mobile, left in desktop) */}
           <div className="w-full md:w-1/2 -mt-24 text-center md:text-left order-2 md:order-1 flex flex-col md:flex-none items-center md:items-start">
             <TextGenerateEffect
-              words="LET'S"
+              words="Come"
               duration={1}
-              className="text-textHeader font-montserrat"
+              className="text-textHeader font-hancoke"
             />
             <TextGenerateEffect
-              words="JOIN US IN"
+              words="Join Us In"
               duration={1}
-              className="text-textHeader  font-montserrat font-semibold"
+              className="text-textHeader font-hancoke"
             />
             <WordRotate
               images={[

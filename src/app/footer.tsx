@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
                     </div>
                     <div className="flex flex-col items-center gap-10 text-sm lg:flex-row md:gap-20">
                         <div className="relative">
-                            <Image
+                            <img
                                 src="/././images/logo-sriwijayabesanjo25.png"
                                 alt="Logo sriwijayabesanjo"
                                 width={310}
