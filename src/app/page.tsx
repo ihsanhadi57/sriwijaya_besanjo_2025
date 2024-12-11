@@ -9,6 +9,8 @@ import { LayoutGridDemo } from './layoutGridPic';
 import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards';
 import { VelocityScroll } from '@/components/ui/scroll-based-velocity';
 import Footer from "@/app/footer";
+import Timer from "@/app/countdown"
+import { TiEdit } from 'react-icons/ti';
 
 const testimonials = [
   {
@@ -27,7 +29,6 @@ const testimonials = [
     title: "",
   },
 ];
-
 
 export default function Home() {
   return (
@@ -99,7 +100,7 @@ export default function Home() {
             />
           </div>
           {/* Mobile: Image Section (top in mobile, right in desktop) */}
-          <div className="w-full md:w-1/2 flex justify-center items-center order-1 md:order-2">
+          <div className="w-full md:w-1/2 flex justify-center items-center z-30 order-1 md:order-2">
             <GlareCard className="flex justify-center items-center">
               <img
                 src="/images/maskot.png"
@@ -110,8 +111,9 @@ export default function Home() {
           </div>
         </div>
         {/* HERO */}
-
-
+        
+        <Timer />
+        
         {/* divider gunung */}
         <img
           src="/images/gunung.png"
@@ -158,8 +160,8 @@ export default function Home() {
             <div className="flex flex-col gap-5 mt-5 md:mt-0">
               <div className="card bg-transparent border-2 border-borderGlare lg:max-w-md max-w-72 h-full  shadow-xl">
                 <div className="card-body md:p-6 p-3">
-                  <h2 className="card-title md:text-xl text-lg font-montserrat">JEREHMY OWEN</h2>
-                  <p className='md:text-base text-sm font-poppins'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum minima alias nobis? Sequi provident neque quia consectetur autem? Libero, doloremque!</p>
+                  <h2 className="card-title md:text-xl text-lg font-montserrat">JERHEMY OWEN</h2>
+                  <p className='md:text-base text-sm font-poppins'>Youtube & TikTok Content Creator <br /> Environment Enthusiast </p>
                   <div className="card-actions justify-end"></div>
                 </div>
               </div>
@@ -168,8 +170,7 @@ export default function Home() {
                 <div className="card-body md:p-6 p-3">
                   <h2 className="card-title text-white md:text-xl text-lg font-montserrat">SUMMARY</h2>
                   <p className="text-white md:text-sm text-xs text-justify font-poppins">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ex culpa et harum blanditiis architecto minus, quibusdam ipsum voluptatum ipsa,
-                    nesciunt excepturi dicta explicabo quae quaerat, qui voluptas labore iusto fugit consectetur? Ad a culpa, qui odit vero repellendus at?
+
                   </p>
                   <div className="card-actions justify-end"></div>
                 </div>
@@ -310,72 +311,6 @@ export default function Home() {
           {/* medpart */}
         </div>
 
-        {/* footer */}
-        {/* <footer className="footer bg-borderGlare text-base-content p-10 text-white font-poppins">
-          <aside>
-            <img src="/images/prakasa.png" alt="prakasa" className='w-96' />
-          </aside>
-          <nav>
-            <h6 className="footer-title text-2xl">Address</h6>
-            <a className="link link-hover">
-              Sekretariat : Jalan Tamyiz, Kec. Indralaya Utara, <br />
-              Kabupaten Ogan Indralaya Ilir, 30862</a>
-
-          </nav>
-          <nav>
-            <h6 className="footer-title text-2xl">Contact</h6>
-            <a className="link link-hover" href=''>Whatsapp <br />
-              +62 877 9385 5926 (Florenzi) <br />
-              +62 895 2973 3304 (Qayla)</a>
-            <a className="link link-hover" href='mailto:sriwijayabesanjo@gmail.com'>Email <br />
-              sriwijayabesanjo@gmail.com
-            </a>
-
-          </nav>
-          <nav>
-            <h6 className="footer-title text-2xl">Social</h6>
-
-            <div className='flex items-center space-x-2'>
-              <a className="link link-hover flex items-center" href='https://www.tiktok.com/@sriwijayabesanjo?lang=id-ID'>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 36 42"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M28.35 7.095C26.8123 5.33894 25.9648 3.08415 25.965 0.75H19.0125V28.65C18.96 30.1602 18.3229 31.5909 17.2357 32.6404C16.1484 33.6898 14.6961 34.2759 13.185 34.275C9.98999 34.275 7.33499 31.665 7.33499 28.425C7.33499 24.555 11.07 21.6525 14.9175 22.845V15.735C7.15499 14.7 0.359985 20.73 0.359985 28.425C0.359985 35.9175 6.56999 41.25 13.1625 41.25C20.2275 41.25 25.965 35.5125 25.965 28.425V14.2725C28.7842 16.2972 32.1691 17.3835 35.64 17.3775V10.425C35.64 10.425 31.41 10.6275 28.35 7.095Z"
-                    fill="white"
-                  />
-                </svg>
-                <span className="ml-2 text-white">Sriwijaya Besanjo</span>
-              </a>
-            </div>
-
-            <div className='flex items-center space-x-2'>
-              <a className="link link-hover flex items-center" href='https://www.instagram.com/sriwijayabesanjo'>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.332 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.332-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.332-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.012-4.947.07-1.281.059-2.563.334-3.637 1.408-1.074 1.074-1.349 2.356-1.408 3.637-.058 1.28-.07 1.688-.07 4.947s.012 3.667.07 4.947c.059 1.281.334 2.563 1.408 3.637 1.074 1.074 2.356 1.349 3.637 1.408 1.28.058 1.688.07 4.947.07s3.667-.012 4.947-.07c1.281-.059 2.563-.334 3.637-1.408 1.074-1.074 1.349-2.356 1.408-3.637.058-1.28.07-1.688.07-4.947s-.012-3.667-.07-4.947c-.059-1.281-.334-2.563-1.408-3.637-1.074-1.074-2.356-1.349-3.637-1.408-1.28-.058-1.688-.07-4.947-.07zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.324c-2.297 0-4.162-1.865-4.162-4.162s1.865-4.162 4.162-4.162 4.162 1.865 4.162 4.162-1.865 4.162-4.162 4.162zm6.406-11.845c-.796 0-1.441.645-1.441 1.441s.645 1.441 1.441 1.441 1.441-.645 1.441-1.441-.645-1.441-1.441-1.441z" />
-                </svg>
-                <span className="ml-2 text-white">Sriwijaya Besanjo</span>
-              </a>
-            </div>
-
-            <div className='flex items-center space-x-2'>
-              <a className="link link-hover flex items-center" href='https://www.linkedin.com/company/himajaunsri'>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current">
-                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.5c0-1.379-1.121-2.5-2.5-2.5s-2.5 1.121-2.5 2.5v5.5h-3v-10h3v1.5c.878-1.314 2.356-2.5 4-2.5 2.485 0 4.5 2.015 4.5 4.5v6.5z" />
-                </svg>
-                <span className="ml-2 text-white">HIMAJA UNSRI</span>
-              </a>
-            </div>
-
-          </nav>
-        </footer> */}
-        {/* footer */}
-        
-        
         <Footer />
 
       </div>
@@ -384,8 +319,6 @@ export default function Home() {
       <div className="drawer-side">
         <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
         <ul className="menu bg-base-200 min-h-full w-64 md:w-80 p-4">
-          <li><a>Sidebar Item 1</a></li>
-          <li><a>Sidebar Item 2</a></li>
           {/* Tambahkan menu mobile lengkap */}
           <li><a>Home</a></li>
           <li><a>About</a></li>

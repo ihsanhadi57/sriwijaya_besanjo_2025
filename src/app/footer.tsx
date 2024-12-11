@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import iconIG from "@/../public/images/icon-instagram.svg"
 
 const Footer: React.FC = () => {
     return (
@@ -26,14 +25,14 @@ const Footer: React.FC = () => {
                                     Alamat
                                 </h4>
                                 <h5 className="text-white font-semibold">Kampus Utama</h5>
-                                <p className="leading-relaxed text-white lg:w-[90%]">
-                                    Jl. Raya Palembang - Prabumulih No. Km. 32, Indralaya Indah,
+                                <p className="w-full leading-relaxed text-white lg:w-[90%]">
+                                    Jl. Raya Palembang - Prabumulih KM. 32, Indralaya Indah,
                                     Kec. Indralaya, Kabupaten Ogan Ilir, Sumatera Selatan 30862
                                 </p>
 
                                 <h5 className="text-white font-bold">Sekretariat</h5>
                                 <p className="leading-relaxed text-white lg:w-[90%]">
-                                    Jalan Tamyiz, Kec. Indralaya Utara, Kabupaten Ogan Indralaya Ilir, 
+                                    Jalan Tamyiz, Kec. Indralaya Utara, Kabupaten Ogan Indralaya Ilir 
                                     30862
                                 </p>
                             </div>
@@ -49,7 +48,7 @@ const Footer: React.FC = () => {
                                             width={24}
                                             height={24}
                                         />
-                                        <p className="font-bold text-transparent bg-gradient-to-br from-[#fff] to-green-200 bg-clip-text">
+                                        <p className="font-bold text-transparent bg-[#fff] bg-clip-text">
                                             Whatsapp
                                         </p>
                                     </div>
@@ -59,7 +58,7 @@ const Footer: React.FC = () => {
                                                 href="https://wa.me/6289529733304"
                                                 className="duration-200 hover:text-green-400"
                                             >
-                                                +62 895-2973-3304 (Qayla)
+                                                +62 895-2973-3304 (Qayla Gina)
                                             </Link>
                                         </li>
                                         <li>
@@ -67,7 +66,7 @@ const Footer: React.FC = () => {
                                                 href="https://wa.me/6287793855926"
                                                 className="duration-200 hover:text-green-400"
                                             >
-                                                +62 877-9385-5926 (Florenzi)
+                                                +62 877-9385-5926 (Florenzi Natasya)
                                             </Link>
                                         </li>
                                     </ul>
@@ -78,7 +77,7 @@ const Footer: React.FC = () => {
                                             width={24}
                                             height={24}
                                         />
-                                        <p className="font-bold text-transparent bg-gradient-to-br from-[#fff] to-green-200 bg-clip-text">
+                                        <p className="font-bold text-transparent bg-[#fff] bg-clip-text">
                                             Email
                                         </p>
                                     </div>
