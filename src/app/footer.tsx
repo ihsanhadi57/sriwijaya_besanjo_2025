@@ -16,10 +16,10 @@ const Footer: React.FC = () => {
                                 alt="Logo sriwijayabesanjo"
                                 width={310}
                                 height={260}
-                                className="w-[175px] sm:w-[310px]"
+                                className="-mt-20 -mb-20 w-[275px] sm:w-[410px]"
                             />
                         </div>
-                        <div className="flex flex-col md:flex-row gap-6 md:gap-10 text-[#52525B] dark:text-[#E5E5E5] w-full z-10">
+                        <div className="flex flex-col md:flex-row gap-6 md:gap-10 text-[#52525B] w-full z-10">
                             <div className="flex flex-col gap-3 md:gap-6 md:w-1/2 lg:w-1/4">
                                 <h4 className="text-lg font-bold text-white uppercase">
                                     Alamat
