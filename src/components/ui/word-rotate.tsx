@@ -37,7 +37,7 @@ export default function ImageRotate({
   }, [images, duration]);
 
   return (
-    <div className="overflow-hidden py-2 w-96 lg:w-svw ">
+    <div className="overflow-hidden py-2 w-96 lg:w-svw">
       <AnimatePresence mode="wait">
         <motion.img
           key={images[index]}

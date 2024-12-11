@@ -5,17 +5,17 @@ import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards';
 
 const testimonials = [
     {
-        quote: "Q: Apa materi yang akan di bawakan?",
+        quote: "Q: Apa saja materi yang akan di bawakan?",
         name: "A: Pemateri akan membawakan seminar dengan tema persiapan ke dunia perkuliahan",
         title: "",
     },
     {
-        quote: "Q: Pembayaran via apa saja?  ",
-        name: "A: Pembayaran bisa dilakukan via Dana, Bni, Bca, dan bisa dilakukan secara langsung (onsite) serta saat kegiatan HGTS berlangsung",
+        quote: "Q: Pembelian tiket dengan metode apa saja?",
+        name: "A: Pembayaran bisa dilakukan via Dana, BNI, BCA, dan bisa dilakukan secara langsung (onsite) saat kegiatan HGTS berlangsung",
         title: "",
     },
     {
-        quote: "Q: Cara pemesanan tiket Sriwijaya Besanjo? ",
+        quote: "Q: Bagaimana cara pemesanan tiket Sriwijaya Besanjo? ",
         name: "A: Pilih jenis tiket yang ingin anda beli, lalu melakukan pembayaran, selanjutnya tiket akan dikirimkan melalui email",
         title: "",
     },
@@ -23,7 +23,7 @@ const testimonials = [
 
 const FaQ = () => {
     return (
-        < div className='md:mt-96 mt-[650px]' >
+        < div className='md:mt-0 mt-[0px]' >
             <div className="flex justify-center items-center">
                 <img src="/images/faq.png" alt="FAQ" className='md:w-44 w-32' />
             </div>

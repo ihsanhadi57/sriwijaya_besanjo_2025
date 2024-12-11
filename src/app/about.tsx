@@ -4,7 +4,7 @@ import 'tailwindcss/tailwind.css';
 
 const About = () => {
     return (
-        <div className="flex flex-col md:flex-row items-top justify-center p-8 md:p-16 lg:-mt-36 lg:ml-24 lg:mr-24">
+        <div  id="about" className="flex flex-col md:flex-row items-top justify-center p-8 md:p-16 lg:-mt-36 lg:ml-24 lg:mr-24">
             <div className="w-full md:w-1/2 mr-0 md:mr-8">
                 <h2 className="md:text-6xl text-5xl md:mb-6 mb-3 font-hancoke text-[#385B03]">HIMAJA UNSRI</h2>
                 <p className="text-sm md:text-xl text-justify mb-10 font-poppins text-[#385B03]">

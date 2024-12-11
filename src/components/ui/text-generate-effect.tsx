@@ -37,9 +37,9 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              className="text-[#FFD001] text-stroke-black opacity-0"
+              className="text-[#FFD001] text-8xl text-stroke-black opacity-0"
               style={{
-                WebkitTextStroke: "0.5px black", // Stroke hitam
+                WebkitTextStroke: "0.2px #392C16", // Stroke hitam
                 WebkitTextFillColor: "#FFD001", // Isi teks kuning
                 filter: filter ? "blur(10px)" : "none",
               }}

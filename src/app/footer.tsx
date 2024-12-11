@@ -5,7 +5,7 @@ import React from "react";
 const Footer: React.FC = () => {
     return (
         <footer id="footer" className="shadow-2xl bottom-0 left-0 font-poppins">
-            <div className="shadow-md pt-10 md:pt-14 lg:pt-2 bg-gradient-to-t from-[#314714] to-[#375B03] dark:from-[#1AB5E4]/30 dark:to-[#E5AFE5]/[35%]">
+            <div className="shadow-md pt-10 md:pt-14 lg:pt-2 bg-gradient-to-t from-[#314714] to-[#486B1B] dark:from-[#1AB5E4]/30 dark:to-[#E5AFE5]/[35%]">
                 <div className="relative flex flex-col w-full gap-6 px-8 py-6 pb-8 mx-auto sm:w-[95%] md:pb-12 lg:px-0">
                     <div className="h-full">
                     </div>
@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
 
                                 <h5 className="text-white font-bold">Sekretariat</h5>
                                 <p className="leading-relaxed text-white lg:w-[90%]">
-                                    Jalan Tamyiz, Kec. Indralaya Utara, Kabupaten Ogan Indralaya Ilir 
+                                    Jalan Tamyiz, Kec. Indralaya Utara, Kabupaten Ogan Indralaya Ilir
                                     30862
                                 </p>
                             </div>
@@ -104,18 +104,34 @@ const Footer: React.FC = () => {
                                     </li>
                                     <li>
                                         <Link
-                                            href="/kompetisi"
-                                            className="hover:text-pink-sriwijayabesanjo"
+                                            href="#about"
+                                            className=""
                                         >
-                                            Kompetisi
+                                            About
                                         </Link>
                                     </li>
                                     <li>
                                         <Link
-                                            href="/seminar"
-                                            className="hover:text-pink-sriwijayabesanjo"
+                                            href="#gs"
+                                            className=""
                                         >
-                                            Seminar
+                                            Guest Star
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            href="#ticket"
+                                            className=""
+                                        >
+                                            Get Ticket
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            href="#getknow"
+                                            className=""
+                                        >
+                                            Gallery
                                         </Link>
                                     </li>
                                 </ul>
