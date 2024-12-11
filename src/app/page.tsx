@@ -4,7 +4,6 @@ import 'tailwindcss/tailwind.css';
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect';
 import WordRotate from '@/components/ui/word-rotate';
 import { GlareCard } from '@/components/ui/glare-card';
-import ShineBorder from '@/components/ui/shine-border';
 import ShinyButton from '@/components/ui/shiny-button';
 import { LayoutGridDemo } from './layoutGridPic';
 import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards';
