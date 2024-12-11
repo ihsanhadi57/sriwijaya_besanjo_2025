@@ -36,7 +36,7 @@ export default function Home() {
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
-        <div className="navbar bg-navbar w-full flex items-center justify-between px-4 py-2">
+        <div className="navbar bg-navbar w-full z-30 flex items-center justify-between px-4 py-2">
           {/* Tombol Hamburger untuk Mobile */}
           <div className="lg:hidden">
             <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
@@ -44,7 +44,7 @@ export default function Home() {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                className="inline-block h-6 w-6 stroke-current">
+                className="inline-block h-6 w-6 stroke-current text-white">
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -53,6 +53,7 @@ export default function Home() {
               </svg>
             </label>
           </div>
+
 
           {/* Container Logo */}
           <div className="flex items-center space-x-4 ml-16">
@@ -82,7 +83,7 @@ export default function Home() {
             <TextGenerateEffect
               words="Come"
               duration={1}
-              className="text-textHeader font-hancoke"
+              className="text-textHeader font-hancoke text-stroke-black"
             />
             <TextGenerateEffect
               words="Join Us In"
@@ -96,11 +97,11 @@ export default function Home() {
               ]}
               duration={3000}
               imgAlt="Prakasa Pratama"
-              className=""
+              className="p-5"
             />
           </div>
           {/* Mobile: Image Section (top in mobile, right in desktop) */}
-          <div className="w-full md:w-1/2 flex justify-center items-center z-30 order-1 md:order-2">
+          <div className="w-full md:w-1/2 flex justify-center items-center z-10 order-1 md:order-2">
             <GlareCard className="flex justify-center items-center">
               <img
                 src="/images/maskot.png"
@@ -111,14 +112,14 @@ export default function Home() {
           </div>
         </div>
         {/* HERO */}
-        
+
         <Timer />
-        
+
         {/* divider gunung */}
         <img
           src="/images/gunung.png"
           alt="Mountain Divider"
-          className='w-full -mt-16 sm:-mt-24 md:-mt-32 lg:-mt-36 xl:-mt-40 z-30 object-cover'
+          className='w-full -mt-16 sm:-mt-24 md:-mt-32 mt-2 lg:-mt-36 xl:-mt-40 z-10 object-cover'
         />
         {/* divider gunung */}
 
@@ -316,9 +317,9 @@ export default function Home() {
       </div>
 
       {/* Sidebar */}
-      <div className="drawer-side">
+      <div className="drawer-side z-20">
         <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
-        <ul className="menu bg-base-200 min-h-full w-64 md:w-80 p-4">
+        <ul className="menu bg-white min-h-full mt-14 w-64 md:w-80 p-4">
           {/* Tambahkan menu mobile lengkap */}
           <li><a>Home</a></li>
           <li><a>About</a></li>
