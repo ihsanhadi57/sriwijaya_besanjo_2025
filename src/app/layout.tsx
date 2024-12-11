@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 const hancoke = localFont({
-  src: "./fonts/hancoke.ttf",
+  src: "./fonts/Hancoke.ttf",
   display: "swap",
   weight: "400", 
   style: "normal", 
@@ -28,7 +28,7 @@ const montserrat = localFont({
   variable: "--font-montserrat",
 });
 const poppins = localFont({
-  src: "./fonts/poppins-Regular.ttf",
+  src: "./fonts/Poppins-Regular.ttf",
   display: "swap",
   weight: "400", 
   style: "normal",
