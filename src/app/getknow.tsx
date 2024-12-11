@@ -5,7 +5,7 @@ import { LayoutGridDemo } from './layoutGridPic';
 
 const GetKnow = () => {
   return (
-    <div className='md:mt-60 mt-20'>
+    <div id='getknow' className='md:mt-60 mt-20'>
       <div className="flex justify-center items-center">
         <img src="/images/get to know.png" alt="get to know" className='md:w-96 md:ml-3 w-64' />
       </div>

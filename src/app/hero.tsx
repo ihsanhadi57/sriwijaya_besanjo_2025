@@ -14,12 +14,12 @@ const Hero = () => {
             <TextGenerateEffect
               words="Come"
               duration={1}
-              className="text-textHeader hidden lg:flex font-hancoke text-stroke-black"
+              className="text-textHeader hidden lg:flex font-hancoke"
             />
             <TextGenerateEffect
               words="Join Us In"
               duration={1}
-              className="text-textHeader  hidden lg:flex font-hancoke"
+              className="text-textHeader hidden lg:flex font-hancoke"
             />
             <WordRotate
               images={[

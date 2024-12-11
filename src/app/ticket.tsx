@@ -5,7 +5,7 @@ import ShinyButton from '@/components/ui/shiny-button';
 
 const Ticket = () => {
     return (
-        <div>
+        <div id='ticket'>
             <div className="flex justify-center items-center md:mt-60 mt-10 ml-8">
                 <div className='relative'>
                     <img src="/images/ticket.png" alt="ticket" className='md:w-64 md:ml-4 w-44 ' />
@@ -21,7 +21,7 @@ const Ticket = () => {
                                 <img src="/images/prakasa.png" alt="maskot" className='w-64' />
                                 <p className='text-white text-3xl mt-3 font-hancoke'>Solo Ticket</p>
                                 <div className="divider divider-warning p-2"></div>
-                                <p className='text-white text-3xl mb-3 font-hancoke'>RP50.000</p>
+                                <p className='text-white text-3xl mb-3 font-hancoke'>Rp 50.000,-</p>
                                 <ShinyButton
                                     href="https://bit.ly/PrakasaParamaGettiketEka"
                                     className="bg-bgGlare w-full text-center font-black"
@@ -40,7 +40,7 @@ const Ticket = () => {
                                 <img src="/images/prakasa.png" alt="maskot" className='w-60' />
                                 <p className='text-white text-3xl mt-3 font-hancoke'>Bundle 3 Ticket</p>
                                 <div className="divider divider-warning p-2"></div>
-                                <p className='text-white text-3xl mb-3 font-hancoke'>RP50.000</p>
+                                <p className='text-white text-3xl mb-3 font-hancoke'>Rp 135.000,-</p>
                                 <ShinyButton
                                     href="https://bit.ly/PrakasaParamaGettiketTri"
                                     className="bg-bgGlare w-full text-center font-black"
@@ -59,7 +59,7 @@ const Ticket = () => {
                                 <img src="/images/prakasa.png" alt="maskot" className='w-60' />
                                 <p className='text-white text-3xl mt-3 font-hancoke'>Bundle 5 Ticket</p>
                                 <div className="divider divider-warning p-2"></div>
-                                <p className='text-white text-3xl mb-3 font-hancoke'>RP50.000</p>
+                                <p className='text-white text-3xl mb-3 font-hancoke'>Rp 215.000,-</p>
                                 <ShinyButton
                                     href="https://bit.ly/PrakasaParamaGettiketPanca"
                                     className="bg-bgGlare w-full text-center font-black"

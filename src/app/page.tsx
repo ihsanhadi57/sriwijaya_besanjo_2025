@@ -1,6 +1,7 @@
 "use client";
 import 'daisyui/dist/full.css';
 import 'tailwindcss/tailwind.css';
+import Link from "next/link";
 import Navbar from '@/app/navbar';
 import Hero from '@/app/hero';
 import Timer from "@/app/countdown";
@@ -36,7 +37,7 @@ export default function Home() {
 
         {/* main content */}
         <div
-          className="relative bg-cover sm:bg-cover bg-contain bg-repeat-y -mb-2 bg-bottom lg:bg-bottom bg-center sm:bg-top min-h-screen w-full"
+          className="relative bg-cover sm:bg-cover bg-contain bg-repeat-y bg-bottom -my-2 bg-center min-h-screen w-full"
           style={{
             backgroundImage: "url('/images/bg.png')",
           }}
@@ -56,13 +57,47 @@ export default function Home() {
       {/* Sidebar */}
       <div className="drawer-side z-20">
         <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
-        <ul className="menu bg-white min-h-full mt-14 w-64 md:w-80 font-poppins font-semibold p-4">
+        <ul className="menu bg-white min-h-full w-64 md:w-80 font-poppins font-semibold p-4">
           {/* Tambahkan menu mobile lengkap */}
-          <li><a>Home</a></li>
-          <li><a>About</a></li>
-          <li><a>Ticket</a></li>
-          <li><a>Galery</a></li>
-          <li><a>FAQ</a></li>
+          <li className='mt-14 '>
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            >
+              Beranda
+            </button>
+          </li>
+          <li>
+            <Link
+              href="#about"
+              className=""
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#gs"
+              className=""
+            >
+              Guest Star
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#ticket"
+              className=""
+            >
+              Get Ticket
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#getknow"
+              className=""
+            >
+              Gallery
+            </Link>
+          </li>
         </ul>
       </div>
 

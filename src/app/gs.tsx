@@ -4,7 +4,7 @@ import 'tailwindcss/tailwind.css';
 
 const Guest = () => {
     return (
-        <div>
+        <div id='gs'>
             <div className="flex justify-center items-center md:mt-32">
                 <img src="/images/our guest star.png" alt="our guest star" className="w-3/6 md:w-96" />
             </div>
@@ -17,7 +17,7 @@ const Guest = () => {
                     <div className="card bg-transparent border-2 border-borderGlare lg:max-w-md max-w-72 h-full  shadow-xl">
                         <div className="card-body md:p-6 p-3">
                             <h2 className="card-title md:text-xl text-lg text-[#274B22] font-montserrat">JERHEMY OWEN</h2>
-                            <p className='md:text-base text-sm font-poppins'>Youtube & TikTok Content Creator <br /> Environment Enthusiast </p>
+                            <p className='md:text-base text-sm font-poppins text-[#274B22]'>Youtube & TikTok Content Creator <br /> Environment Enthusiast </p>
                             <div className="card-actions justify-end"></div>
                         </div>
                     </div>

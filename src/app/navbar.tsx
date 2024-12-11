@@ -1,6 +1,8 @@
 "use client";
 import 'daisyui/dist/full.css';
 import 'tailwindcss/tailwind.css';
+import Link from "next/link";
+
 
 
 const Navbar = () => {
@@ -25,21 +27,47 @@ const Navbar = () => {
 
 
             {/* Container Logo */}
-            <div className="flex items-center space-x-4 ml-16">
+            <div className="flex items-center space-x-2 ml-16">
                 <img src="/images/logo himaja 2.png" alt="Logo Himaja" className="h-8 w-8 md:h-10 md:w-10" />
-                <img src="/images/aruna.png" alt="Logo Himaja" className="h-8 w-8 md:h-10 md:w-10" />
+                <img src="/images/aruna.png" alt="Logo Aruna" className="h-12 w-10 md:h-10 md:w-10" />
                 <img src="/images/Logo SB 3.png" alt="Logo SB" className="h-8 w-8 md:h-10 md:w-10" />
-                <img src="/images/Salinan LOGO PRAKASA PARAMA FINAL 2.png" alt="Logo prakasa parama" className="h-8 w-8 md:h-10 md:w-10" />
+                <img src="/images/Salinan LOGO PRAKASA PARAMA FINAL 2.png" alt="Logo Prakasa" className="h-8 w-8 md:h-10 md:w-10" />
             </div>
 
             {/* Menu Navigasi Desktop */}
             <div className="hidden lg:block">
                 <ul className="menu menu-horizontal text-white space-x-0 mr-16 font-poppins">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Ticket</a></li>
-                    <li><a>Galery</a></li>
-                    <li><a>FAQ</a></li>
+                    <li>
+                                        <button
+                                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                                        >
+                                            Beranda
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            href="#about"
+                                            className=""
+                                        >
+                                            About
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            href="#gs"
+                                            className=""
+                                        >
+                                            Guest Star
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            href="#getknow"
+                                            className=""
+                                        >
+                                            Gallery
+                                        </Link>
+                                    </li>
                 </ul>
             </div>
         </div>
