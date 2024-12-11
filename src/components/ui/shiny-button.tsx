@@ -1,11 +1,5 @@
-"use client";
-
 import React from "react";
-import {
-  motion,
-  type AnimationProps,
-  type HTMLMotionProps,
-} from "framer-motion";
+import { motion, type AnimationProps } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 const animationProps = {
@@ -29,16 +23,18 @@ const animationProps = {
   },
 } as AnimationProps;
 
-interface ShinyButtonProps extends HTMLMotionProps<"button"> {
+interface ShinyButtonProps {
   children: React.ReactNode;
   className?: string;
+  href?: string;
 }
 
-const ShinyButton = React.forwardRef<HTMLButtonElement, ShinyButtonProps>(
-  ({ children, className, ...props }, ref) => {
+const ShinyButton = React.forwardRef<HTMLAnchorElement, ShinyButtonProps>(
+  ({ children, className, href, ...props }, ref) => {
     return (
-      <motion.button
+      <motion.a
         ref={ref}
+        href={href}
         {...animationProps}
         {...props}
         className={cn(
@@ -62,7 +58,7 @@ const ShinyButton = React.forwardRef<HTMLButtonElement, ShinyButtonProps>(
           }}
           className="absolute inset-0 z-10 block rounded-[inherit] bg-[linear-gradient(-75deg,hsl(var(--primary)/10%)_calc(var(--x)+20%),hsl(var(--primary)/50%)_calc(var(--x)+25%),hsl(var(--primary)/10%)_calc(var(--x)+100%))] p-px"
         ></span>
-      </motion.button>
+      </motion.a>
     );
   },
 );
