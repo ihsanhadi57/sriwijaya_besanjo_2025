@@ -7,7 +7,7 @@ export const TextGenerateEffect = ({
   words,
   className,
   filter = true,
-  duration = 0.5,
+  duration = 1.5,
 }: {
   words: string;
   className?: string;
@@ -37,8 +37,10 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              className="text-yellow-400 stroke-black opacity-0"
+              className="text-[#FFD001] text-stroke-black opacity-0"
               style={{
+                WebkitTextStroke: "0.1px black", // Stroke hitam
+                WebkitTextFillColor: "#FFD001", // Isi teks kuning
                 filter: filter ? "blur(10px)" : "none",
               }}
             >
