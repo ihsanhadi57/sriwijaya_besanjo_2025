@@ -23,10 +23,10 @@ const Hero = () => {
             />
             <WordRotate
               images={[
-                "/images/prakasa.png",
-                "/images/sb25.png",
+                "/images//texts/sb25.png",
+                "/images/texts/prakasa.png",
               ]}
-              duration={3000}
+              duration={6000}
               imgAlt="Prakasa Parama"
               className="md:p-0 p-4"
             />

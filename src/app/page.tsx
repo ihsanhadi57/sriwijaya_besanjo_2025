@@ -20,7 +20,6 @@ export default function Home() {
     <div className="drawer">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col ">
-
         <Navbar />
         <Hero />
         <Timer />
@@ -35,7 +34,6 @@ export default function Home() {
 
         <About />
 
-        {/* main content */}
         <div
           className="relative bg-cover sm:bg-cover bg-contain bg-repeat-y bg-bottom -my-2 bg-center min-h-screen w-full"
           style={{
@@ -57,7 +55,7 @@ export default function Home() {
       {/* Sidebar */}
       <div className="drawer-side z-20">
         <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
-        <ul className="menu bg-white min-h-full w-64 md:w-80 font-poppins font-semibold p-4">
+        <ul className="menu bg-white min-h-full w-64 md:w-80 font-poppins p-4">
           {/* Tambahkan menu mobile lengkap */}
           <li className='mt-14 '>
             <button
@@ -99,6 +97,11 @@ export default function Home() {
             </Link>
           </li>
         </ul>
+        <img
+          src="/images/gunung.png"
+          alt="Mountain Divider"
+          className='min-h-full pb-48 w-64 object-contain'
+        />
       </div>
 
     </div>
