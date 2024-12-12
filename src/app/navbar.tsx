@@ -30,7 +30,7 @@ const Navbar = () => {
             <div className="flex items-center space-x-2 ml-16">
                 <img src="/images/logos/logo-himaja.png" alt="Logo Himaja" className="h-8 w-8 md:h-10 md:w-10" />
                 <img src="/images/logos/logo-aruna.png" alt="Logo Aruna" className="h-12 w-12 md:h-10 md:w-10" />
-                <img src="/images//logos/Logo-SB.png" alt="Logo SB" className="h-8 w-8 md:h-10 md:w-10" />
+                <img src="/images/logos/Logo-SB.png" alt="Logo SB" className="h-8 w-8 md:h-10 md:w-10" />
                 <img src="/images/logos/logo-prakasa.png" alt="Logo Prakasa" className="h-8 w-8 md:h-10 md:w-10" />
             </div>
 
