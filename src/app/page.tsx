@@ -55,9 +55,9 @@ export default function Home() {
       {/* Sidebar */}
       <div className="drawer-side z-20">
         <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
-        <ul className="menu bg-white min-h-full w-64 md:w-80 font-poppins p-4">
+        <ul className="menu bg-white min-h-full w-64 md:w-80 font-poppins p-4 z-20">
           {/* Tambahkan menu mobile lengkap */}
-          <li className='mt-14 '>
+          <li className='mt-14'>
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
@@ -100,7 +100,7 @@ export default function Home() {
         <img
           src="/images/gunung.png"
           alt="Mountain Divider"
-          className='min-h-full pb-48 w-64 object-contain'
+          className='min-h-full w-64 bottom-0 object-contain z-10'
         />
       </div>
 
