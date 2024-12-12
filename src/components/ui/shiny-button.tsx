@@ -5,23 +5,18 @@ import { cn } from "@/lib/utils";
 const animationProps = {
   initial: { "--x": "100%", scale: 0.8 },
   animate: { "--x": "-100%", scale: 1 },
-  whileTap: { scale: 0.95 },
+  whileTap: { scale: 0.9 }, // Tombol mengecil lebih sedikit saat diklik
   transition: {
     repeat: Infinity,
     repeatType: "loop",
     repeatDelay: 1,
     type: "spring",
-    stiffness: 20,
-    damping: 15,
-    mass: 2,
-    scale: {
-      type: "spring",
-      stiffness: 200,
-      damping: 5,
-      mass: 0.5,
-    },
+    stiffness: 30, // Tambahkan kekakuan agar animasi lebih "tegas"
+    damping: 10, // Kurangi redaman untuk mempercepat akhir animasi
+    mass: 1.5,
   },
 } as AnimationProps;
+
 
 interface ShinyButtonProps {
   children: React.ReactNode;
@@ -38,7 +33,7 @@ const ShinyButton = React.forwardRef<HTMLAnchorElement, ShinyButtonProps>(
         {...animationProps}
         {...props}
         className={cn(
-          "relative rounded-lg px-6 py-2 font-medium backdrop-blur-xl transition-shadow duration-300 ease-in-out hover:shadow dark:bg-[radial-gradient(circle_at_50%_0%,hsl(var(--primary)/10%)_0%,transparent_60%)] dark:hover:shadow-[0_0_20px_hsl(var(--primary)/10%)]",
+          "relative rounded-lg px-6 py-2 font-medium transform transition-transform duration-200 hover:scale-105",
           className,
         )}
       >

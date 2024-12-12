@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
                     <div className="flex flex-col items-center gap-10 text-sm lg:flex-row md:gap-20">
                         <div className="relative">
                             <img
-                                src="/././images/logo-sriwijayabesanjo25.png"
+                                src="/././images/logos/logo-prakasa.png"
                                 alt="Logo sriwijayabesanjo"
                                 width={310}
                                 height={260}
@@ -25,15 +25,15 @@ const Footer: React.FC = () => {
                                     Alamat
                                 </h4>
                                 <h5 className="text-white font-semibold">Kampus Utama</h5>
-                                <p className="w-full leading-relaxed text-white lg:w-[90%]">
-                                    Jl. Raya Palembang - Prabumulih KM. 32, Indralaya Indah,
-                                    Kec. Indralaya, Kabupaten Ogan Ilir, Sumatera Selatan 30862
+                                <p className="w-full leading-relaxed text-justify text-white lg:w-[90%]">
+                                    Jl. Raya Palembang-Prabumulih KM. 32, Indralaya Indah,
+                                    Kec. Indralaya, Kabupaten Ogan Ilir, Sumatera Selatan (30862)
                                 </p>
 
                                 <h5 className="text-white font-bold">Sekretariat</h5>
-                                <p className="leading-relaxed text-white lg:w-[90%]">
-                                    Jalan Tamyiz, Kec. Indralaya Utara, Kabupaten Ogan Indralaya Ilir
-                                    30862
+                                <p className="leading-relaxed text-white text-justify lg:w-[90%]">
+                                    Jalan Tamyiz, Kec. Indralaya Utara, Kabupaten Ogan Ilir
+                                    (30862)
                                 </p>
                             </div>
                             <div className="flex flex-col gap-3 md:gap-6">
@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
                                 <div className="flex flex-col gap-1">
                                     <div className="flex items-center gap-1">
                                         <Image
-                                            src="/././images/icon-whatsapp.svg"
+                                            src="/././images/socials/icon-whatsapp.svg"
                                             alt="icon whatsapp"
                                             width={24}
                                             height={24}
@@ -72,7 +72,7 @@ const Footer: React.FC = () => {
                                     </ul>
                                     <div className="flex items-center gap-1 mt-2">
                                         <Image
-                                            src="/././images/icon-email.svg"
+                                            src="/././images/socials/icon-email.svg"
                                             alt="icon email"
                                             width={24}
                                             height={24}
@@ -105,7 +105,7 @@ const Footer: React.FC = () => {
                                     <li>
                                         <Link
                                             href="#about"
-                                            className=""
+                                            className="duration-200 hover:text-green-400"
                                         >
                                             About
                                         </Link>
@@ -113,7 +113,7 @@ const Footer: React.FC = () => {
                                     <li>
                                         <Link
                                             href="#gs"
-                                            className=""
+                                            className="duration-200 hover:text-green-400"
                                         >
                                             Guest Star
                                         </Link>
@@ -121,7 +121,7 @@ const Footer: React.FC = () => {
                                     <li>
                                         <Link
                                             href="#ticket"
-                                            className=""
+                                            className="duration-200 hover:text-green-400"
                                         >
                                             Get Ticket
                                         </Link>
@@ -129,7 +129,7 @@ const Footer: React.FC = () => {
                                     <li>
                                         <Link
                                             href="#getknow"
-                                            className=""
+                                            className="duration-200 hover:text-green-400"
                                         >
                                             Gallery
                                         </Link>
@@ -138,21 +138,29 @@ const Footer: React.FC = () => {
                             </div>
                             <div className="flex flex-col gap-3 md:gap-6 lg:ml-6">
                                 <h4 className="text-lg font-bold text-white uppercase">
-                                    Kompetisi
+                                    Pra-Event
                                 </h4>
                                 <ul className="flex flex-col gap-3 md:gap-6 text-white">
                                     <li>
                                         <Link
-                                            href="/kompetisi/competitive-programming"
-                                            className="hover:text-pink-sriwijayabesanjo"
+                                            href="#"
+                                            className=""
+                                        >
+                                            Konser Amal
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            href="#"
+                                            className=""
                                         >
                                             Tournament Mobile Legends
                                         </Link>
                                     </li>
                                     <li>
                                         <Link
-                                            href="/kompetisi/uiux-design"
-                                            className="hover:text-pink-sriwijayabesanjo"
+                                            href=""
+                                            className=""
                                         >
                                             Vocal Solo Online
                                         </Link>
@@ -169,7 +177,7 @@ const Footer: React.FC = () => {
                         <div className="flex items-center justify-center gap-4 sm:gap-6 lg:gap-8">
                             <Link href="https://instagram.com/sriwijayabesanjo">
                                 <Image
-                                    src={"/././images/icon-instagram.svg"}
+                                    src={"/././images/socials/icon-instagram.svg"}
                                     alt="icon email"
                                     width={24}
                                     height={24}
