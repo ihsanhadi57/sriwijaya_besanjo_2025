@@ -25,6 +25,7 @@ const Hero = () => {
               images={[
                 "/images//texts/sb25.png",
                 "/images/texts/prakasa.png",
+                "/images/texts/jargon.png",
               ]}
               duration={6000}
               imgAlt="Prakasa Parama"
