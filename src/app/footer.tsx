@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
                     <div className="flex flex-col items-center gap-10 text-sm lg:flex-row md:gap-20">
                         <div className="relative">
                             <img
-                                src="/././images/logos/logo-prakasa.png"
+                                src="/././images/logos/logo-prakasa-invert.png"
                                 alt="Logo sriwijayabesanjo"
                                 width={310}
                                 height={260}
@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
                         </div>
                         <div className="flex flex-col md:flex-row gap-6 md:gap-10 text-[#52525B] w-full z-10">
                             <div className="flex flex-col gap-3 md:gap-6 md:w-1/2 lg:w-1/4">
-                                <h4 className="text-lg font-bold text-white uppercase">
+                                <h4 className="text-lg font-bold text-white mt-12 uppercase">
                                     Alamat
                                 </h4>
                                 <h5 className="text-white font-semibold">Kampus Utama</h5>
