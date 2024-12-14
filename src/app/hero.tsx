@@ -27,7 +27,7 @@ const Hero = () => {
                 "/images/texts/prakasa.png",
                 "/images/texts/jargon.png",
               ]}
-              duration={6000}
+              duration={3000}
               imgAlt="Prakasa Parama"
               className="md:p-0 p-4"
             />

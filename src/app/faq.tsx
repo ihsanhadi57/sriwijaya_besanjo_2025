@@ -31,8 +31,8 @@ const FaQ = () => {
                 <InfiniteMovingCards
                     items={testimonials}
                     direction="left"
-                    speed="normal"
-                    className='font-poppins'
+                    speed="fast"
+                    className='font-poppins text-justify'
                 />
             </div>
         </div >
