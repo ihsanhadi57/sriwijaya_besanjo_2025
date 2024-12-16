@@ -28,10 +28,10 @@ const Navbar = () => {
 
             {/* Container Logo */}
             <div className="flex items-center space-x-2 ml-16">
-                <img src="/images/logos/logo-himaja.png" alt="Logo Himaja" className="h-8 w-8 md:h-10 md:w-10" />
-                <img src="/images/logos/logo-aruna-full.png" alt="Logo Aruna" className="h-8 w-12 md:h-10 md:w-10" />
-                <img src="/images/logos/logo-SB.png" alt="Logo SB" className="h-8 w-8 md:h-10 md:w-10" />
-                <img src="/images/logos/logo-prakasa-cut.png" alt="Logo Prakasa" className="h-8 w-8 md:h-10 md:w-10" />
+                <img src="/images/logos/logo-himaja.png" alt="Logo Himaja" className="h-8 w-8 md:h-11 md:w-11" />
+                <img src="/images/logos/logo-aruna-full.png" alt="Logo Aruna" className="h-8 w-12 md:h-9 md:w-16" />
+                <img src="/images/logos/logo-SB.png" alt="Logo SB" className="h-8 w-8 md:h-12 md:w-12" />
+                <img src="/images/logos/logo-prakasa-cut.png" alt="Logo Prakasa" className="h-8 w-8 md:h-12 md:w-12" />
             </div>
 
             {/* Menu Navigasi Desktop */}
