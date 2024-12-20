@@ -62,6 +62,14 @@
   .countdown-box {
     box-shadow: inset 0px 0px 4px 2px rgb(9, 72, 4);
   }
+  .logo-email {
+    width:24; 
+    height: 24;
+  }
+  .logo-instagram {
+    width:24; 
+    height: 24;
+  }
 }
 
 @layer base {
