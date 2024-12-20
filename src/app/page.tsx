@@ -45,7 +45,7 @@ export default function Home() {
           <GetKnow />
           <FaQ />
           {/* <Sponsor /> */}
-          {/* <Medpart /> */}
+          <Medpart />
         </div>
 
         <Footer />
