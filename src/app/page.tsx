@@ -10,7 +10,7 @@ import Guest from '@/app/gs';
 import Ticket from './ticket';
 import GetKnow from "@/app/getknow";
 import FaQ from "@/app/faq";
-// import Sponsor from "@/app/sponsors";
+import Sponsor from "@/app/sponsors";
 import Medpart from '@/app/medpart';
 import Footer from "@/app/footer";
 

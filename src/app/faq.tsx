@@ -23,11 +23,11 @@ const testimonials = [
 
 const FaQ = () => {
     return (
-        < div className='md:mt-0 mt-[0px]' >
+        < div className='md:mt-0 mt-[90px]' >
             <div className="flex justify-center items-center">
-                <img src="/images/texts/faq.png" alt="FAQ" className='md:w-44 w-32' />
+                <img src="/images/texts/faq.png" alt="FAQ" className='md:w-44 w-32 mt-56' />
             </div>
-            <div className="h-[40rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden -mt-52">
+            <div className="h-[40rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden -mt-48 -mb-48">
                 <InfiniteMovingCards
                     items={testimonials}
                     direction="left"
