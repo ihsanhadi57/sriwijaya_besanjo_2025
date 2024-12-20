@@ -143,28 +143,26 @@ const Footer: React.FC = () => {
                                 </h4>
                                 <ul className="flex flex-col gap-3 md:gap-6 text-white">
                                     <li>
-                                        <Link
-                                            href="#"
-                                            className=""
+                                        <button
+                                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                                         >
                                             Konser Amal
-                                        </Link>
+                                        </button>
                                     </li>
                                     <li>
-                                        <Link
-                                            href="#"
-                                            className=""
+                                        <button
+                                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                                         >
                                             Tournament Mobile Legends
-                                        </Link>
+
+                                        </button>
                                     </li>
                                     <li>
-                                        <Link
-                                            href=""
-                                            className=""
+                                        <button
+                                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                                         >
                                             Vocal Solo Online
-                                        </Link>
+                                        </button>
                                     </li>
                                 </ul>
                             </div>

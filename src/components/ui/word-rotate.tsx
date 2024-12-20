@@ -1,52 +1,44 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { AnimatePresence, HTMLMotionProps, motion } from "framer-motion";
-
-import { cn } from "@/lib/utils";
 
 interface ImageRotateProps {
-  images: string[]; // Array of image URLs
-  duration?: number;
-  framerProps?: HTMLMotionProps<"img">;
-  className?: string;
-  imgAlt?: string; // Alt text for accessibility
+  images: string[]; // Array URL gambar
+  duration?: number; // Durasi tiap gambar dalam milidetik
+  className?: string; // Kelas tambahan opsional
+  imgAlt?: string; // Alt text untuk aksesibilitas
 }
 
 export default function ImageRotate({
   images,
   duration = 2500,
-  framerProps = {
-    initial: { opacity: 0, y: -50 },
-    animate: { opacity: 1, y: 0 },
-    exit: { opacity: 1, y: 50 },
-    transition: { duration: 0.25, ease: "easeOut" },
-  },
-  className,
+  className = "",
   imgAlt = "Rotating Image",
 }: ImageRotateProps) {
   const [index, setIndex] = useState(0);
+  const [fadeIn, setFadeIn] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setFadeIn(false); // Mulai fade out
+      setTimeout(() => {
+        setIndex((prevIndex) => (prevIndex + 1) % images.length); // Ganti gambar
+        setFadeIn(true); // Mulai fade in
+      }, 300); // Durasi fade out
     }, duration);
 
-    // Clean up interval on unmount
     return () => clearInterval(interval);
   }, [images, duration]);
 
   return (
-    <div className="overflow-hidden py-2 w-96 lg:w-svw">
-      <AnimatePresence mode="wait">
-        <motion.img
-          key={images[index]}
-          src={images[index]}
-          alt={imgAlt}
-          className={cn(className)}
-          {...framerProps}
-        />
-      </AnimatePresence>
+    <div className={`relative overflow-hidden w-96 h-auto ${className}`}>
+      <img
+        src={images[index]}
+        alt={imgAlt}
+        className={`w-full h-auto transition-opacity duration-300 ease-in-out ${
+          fadeIn ? "opacity-100" : "opacity-0"
+        }`}
+      />
     </div>
   );
 }

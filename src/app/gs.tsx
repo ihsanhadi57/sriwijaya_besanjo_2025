@@ -7,7 +7,7 @@ const Guest = () => {
     return (
         <div id='gs'>
             <div className="flex justify-center items-center md:mt-32">
-                <img src="/images//texts/our guest star.png" alt="our guest star" className="w-3/6 md:w-96" />
+                <img src="/images//texts/our guest star.png" alt="our guest star" className="w-[248px] md:w-96" />
             </div>
             <div className="flex flex-col items-center justify-center md:flex-row md:justify-center md:gap-10 md:mt-20 md:px-16 mt-10">
                 <div className='bg-bgGlare flex items-center justify-center h-auto rounded-[64px]'>
