@@ -10,7 +10,7 @@ const Medpart = () => {
             <div className="flex justify-center items-end">
                 <img src="../images/texts/medpart-text.png" alt="media partners" className='md:w-80 md:ml-3 w-[248px]' />
             </div>
-            <VelocityScroll default_velocity={2} className='mt-10'>
+            <VelocityScroll default_velocity={1} className='mt-10'>
                 <div className="flex gap-10">
                     <img src="/images/medparts/dt-peduli.png" alt="DT PEDULI" className="md:w-48 md:h-32 md:ml-5 ml-5 w-36 h-24"/>
                     <img src="/images/medparts/info-event-jambi.png" alt="INFO EVENT JAMBI" className="md:w-32 md:h-32 w-24 h-24"/>

@@ -10,7 +10,7 @@ import Guest from '@/app/gs';
 import Ticket from './ticket';
 import GetKnow from "@/app/getknow";
 import FaQ from "@/app/faq";
-import Sponsor from "@/app/sponsors";
+// import Sponsor from "@/app/sponsors";
 import Medpart from '@/app/medpart';
 import Footer from "@/app/footer";
 
@@ -28,14 +28,14 @@ export default function Home() {
         <img
           src="/images/gunung.png"
           alt="Mountain Divider"
-          className='w-full -mt-16 sm:-mt-24 md:-mt-32 mt-2 lg:-mt-36 xl:-mt-40 z-10 object-cover'
+          className='w-full sm:-mt-24 md:-mt-32 mt-2 lg:-mt-36 xl:-mt-40 z-10 object-cover'
         />
         {/* divider gunung */}
 
         <About />
 
         <div
-          className="relative bg-cover sm:bg-cover bg-contain bg-repeat-y bg-bottom -my-2 bg-center min-h-screen w-full"
+          className="relative sm:bg-cover bg-cover bg-repeat-y bg-bottom -my-2 min-h-screen w-full"
           style={{
             backgroundImage: "url('/images/bg.png')",
           }}
