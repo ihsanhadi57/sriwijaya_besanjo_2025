@@ -7,8 +7,8 @@ import { VelocityScroll } from '@/components/ui/scroll-based-velocity';
 const Medpart = () => {
     return (
         <div className='mt-10 mb-10'>
-            <div className="flex justify-end items-end md:mr-32 mr-8">
-                <img src="../images/texts/media partner 2.png" alt="" className='md:w-80 md:ml-3 w-[248px]' />
+            <div className="flex justify-center items-end">
+                <img src="../images/texts/medpart-text.png" alt="media partners" className='md:w-80 md:ml-3 w-[248px]' />
             </div>
             <VelocityScroll default_velocity={2} className='mt-10'>
                 <div className="flex gap-10">

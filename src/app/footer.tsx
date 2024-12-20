@@ -74,8 +74,9 @@ const Footer: React.FC = () => {
                                         <Image
                                             src="/././images/socials/icon-email.svg"
                                             alt="icon email"
-                                            width={24}
-                                            height={24}
+                                            width="24"
+                                            height="24"
+                                            className="logo-email"
                                         />
                                         <p className="font-bold text-transparent bg-[#fff] bg-clip-text">
                                             Email
@@ -178,9 +179,10 @@ const Footer: React.FC = () => {
                             <Link href="https://instagram.com/sriwijayabesanjo">
                                 <Image
                                     src={"/././images/socials/icon-instagram.svg"}
-                                    alt="icon email"
-                                    width={24}
-                                    height={24}
+                                    alt="icon instagram"
+                                    width="24"
+                                    height="24"
+                                    className="logo-instagram"
                                 />
                             </Link>
                             <Link href="https://www.tiktok.com/@sriwijayabesanjo">
